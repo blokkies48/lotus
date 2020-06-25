@@ -1,33 +1,36 @@
+
 *{
-    margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: 'Lobster', cursive;
+    margin: 0;
 }
+
 nav{
     display: flex;
     justify-content: space-around;
     align-items: center;
     height: 8vh;
-    background-color: rgb(123, 97, 145);
-
+    background-color: rgba(123, 97, 145, 0);
     width: 100%;
     z-index: 5;
     position: fixed;
-    transition: 1.5s;
+    transition: 1s;
+    font-family: 'Lobster', cursive;
+    
 }
 .sticky{
-    transition: 1s;
+    transition: 0.5s;
     background-color: rgba(123, 97, 145,0.7);
+    height: 10vh;
 }
-.logo{
+.logo a{
     color: rgb(211, 211, 211);
     text-transform: uppercase;
     letter-spacing: 5px;
     font-size: 20px;
     font-weight: bolder;
+    text-decoration: none;
+    
 }
-
 .nav-links{
     display: flex;
     justify-content: space-around;
@@ -40,7 +43,26 @@ nav{
     color: rgb(211, 211, 211);
     letter-spacing: 3px;
     font-weight: bold;
+    position: relative;
+    display: inline-block;  
 }
+.nav-links a::after{
+    display:block;
+    content: '';
+    border-bottom: solid 3px rgb(76, 32, 95);  
+    transform: scaleX(0);  
+    transition: transform 250ms ease-in-out;
+    transform-origin:100% 50%
+}
+.nav-links a:hover::after{
+    transform: scaleX(1);
+    transform-origin:0 50%;
+    
+}
+.nav-links a:hover{
+    color: aliceblue;
+}
+
 .burger{
     display: none;
     cursor: pointer;
@@ -74,7 +96,17 @@ nav{
        transform: translateX(100%);
        transition:  0.3s ease-in;
        z-index: 10;
+       transition: 1s;
    }
+
+
+    .onscroll{
+      top: 10vh;
+      height: 90vh;
+      transition: 0.5s;
+
+   }
+
    .nav-links li{
        opacity: 0;
    }
