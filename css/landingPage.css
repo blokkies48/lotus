@@ -33,9 +33,9 @@ section{
 .herotext{
     position: relative;
     top: 70%;
-    left: 15%;
+    left: 0%;
     font-size: 3rem;
-    transform: translate(-10%, -70%);
+   
     z-index: 3;
     color: azure;
     margin: 0;
@@ -104,6 +104,8 @@ section{
 .summery  p{
     margin: 10px;
 }
+
+
 .extraImg{
     background: url(/Images/place-holders/pink-lotus-flowers-2171292\ \(1\).jpg)
     center ;
@@ -129,26 +131,5 @@ section{
     height: 100%;
 }
 
-footer{
-    background-color: rgb(123, 97, 145);
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    color: white;
-}
-.contacts div{
-  padding: 10px;
-  font-size: 20px;
-
-}
-.socialMediaLinks div{
-    padding: 10px;
-}
-
-.socialMediaLinks div img{
-    max-width: 40px;
-
-}
 
 
