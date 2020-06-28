@@ -21,6 +21,7 @@ nav{
     transition: 0.5s;
     background-color: rgba(123, 97, 145,0.7);
     height: 10vh;
+    
 }
 .logo a{
     color: rgb(211, 211, 211);
@@ -97,6 +98,7 @@ nav{
        transition:  0.3s ease-in;
        z-index: 10;
        transition: 1s;
+      
    }
 
 
@@ -104,6 +106,7 @@ nav{
       top: 10vh;
       height: 90vh;
       transition: 0.5s;
+      
 
    }
 

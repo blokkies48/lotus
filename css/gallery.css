@@ -4,7 +4,11 @@
     
 }
 body{
-    background: linear-gradient(to right , rgba(179, 46, 172, 0.507) , rgba(143, 4, 125, 0.507));
+   background-image: url(/Images/place-holders/purple-petaled-flower-on-white-surface-934011.jpg);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   z-index: -10000;
 }
 .imagesgallery{
    text-align: center;
@@ -18,7 +22,7 @@ body{
     
     margin: 15px;
     transition: 1s;
-    
+    border: solid rgba(0, 0, 0, 0) 2px;
     
 }
 
@@ -27,9 +31,20 @@ body{
 .imagesgallery a img:hover{
     filter:grayscale(50%);
     transform: scale(1.1);
-    border: black solid 2px;
-    border-radius: 5px;
+    border: solid rgb(0, 0, 0) 2px;
+    border-radius: 10px;
+}
+
+.nav-links a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+.logo a{
+    color: rgb(0, 0, 0);
+}
+.burger div{
+    background-color: black;
 }
 footer{
-    margin-top: 50px;
+    margin-top: 70px;
 }
